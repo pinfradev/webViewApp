@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SecondApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="rh8-j9-MdH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenidos!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="OEf-U8-a2O">
+                                <rect key="frame" x="45" y="10" width="285" height="55"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="51z-sB-95N">
+                                <rect key="frame" x="45" y="95" width="230" height="155"/>
+                                <string key="text">Hola bienvenidos a esta aplicacion! Nustra app tatara sobre el manejo de una webView  la cual mostrara una pagina de internet sin necesidad de salir de la aplicacion.  </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.055358800899999998" green="0.053005373109999997" blue="0.26598666799999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="APP" translatesAutoresizingMaskIntoConstraints="NO" id="46H-tD-Ir4">
+                                <rect key="frame" x="45" y="246" width="230" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="46H-tD-Ir4" secondAttribute="height" multiplier="1:1" id="upi-tr-FW5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rh8-j9-MdH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3WA-8I-Dtx"/>
+                            <constraint firstItem="OEf-U8-a2O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="4gk-QV-2mL"/>
+                            <constraint firstItem="rh8-j9-MdH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="94a-VJ-gqB"/>
+                            <constraint firstItem="51z-sB-95N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="9Z4-hl-acx"/>
+                            <constraint firstItem="46H-tD-Ir4" firstAttribute="top" secondItem="51z-sB-95N" secondAttribute="bottom" constant="8" id="J2D-yn-YI4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="46H-tD-Ir4" secondAttribute="trailing" constant="139" id="U33-zP-Svv"/>
+                            <constraint firstAttribute="trailing" secondItem="rh8-j9-MdH" secondAttribute="trailing" id="Woc-v3-6nm"/>
+                            <constraint firstAttribute="bottom" secondItem="rh8-j9-MdH" secondAttribute="bottom" id="XhJ-pc-sed"/>
+                            <constraint firstItem="46H-tD-Ir4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="ZIU-05-qqu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OEf-U8-a2O" secondAttribute="trailing" constant="45" id="eS2-wz-Wme"/>
+                            <constraint firstItem="OEf-U8-a2O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="kth-xN-nN8"/>
+                            <constraint firstItem="51z-sB-95N" firstAttribute="top" secondItem="OEf-U8-a2O" secondAttribute="bottom" constant="10" id="osW-qH-46f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="51z-sB-95N" secondAttribute="trailing" constant="45" id="zUE-xs-zuk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="RYP-zc-7Tt" kind="presentation" identifier="goRight" modalTransitionStyle="crossDissolve" id="YdH-KD-slI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35.625" y="32.74647887323944"/>
+        </scene>
+        <!--Internet View Controller-->
+        <scene sceneID="FUd-Pi-yn8">
+            <objects>
+                <viewController id="RYP-zc-7Tt" customClass="internetViewController" customModule="SecondApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tls-Ir-2j3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="cs4-CT-AAG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nueva ViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nh4-4p-Weg">
+                                <rect key="frame" x="75" y="276" width="203" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oe9-4x-8pt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3y3-8N-3Yu" firstAttribute="trailing" secondItem="cs4-CT-AAG" secondAttribute="trailing" id="0vB-ix-RPd"/>
+                            <constraint firstItem="cs4-CT-AAG" firstAttribute="top" secondItem="3y3-8N-3Yu" secondAttribute="top" id="1da-tw-3tj"/>
+                            <constraint firstItem="Oe9-4x-8pt" firstAttribute="bottom" secondItem="3y3-8N-3Yu" secondAttribute="bottom" id="B1X-Z9-9kL"/>
+                            <constraint firstItem="Oe9-4x-8pt" firstAttribute="top" secondItem="tls-Ir-2j3" secondAttribute="top" id="Rre-yb-3wI"/>
+                            <constraint firstItem="Oe9-4x-8pt" firstAttribute="trailing" secondItem="3y3-8N-3Yu" secondAttribute="trailing" id="ZGo-bm-BS8"/>
+                            <constraint firstItem="cs4-CT-AAG" firstAttribute="leading" secondItem="3y3-8N-3Yu" secondAttribute="leading" id="aIh-gE-6z9"/>
+                            <constraint firstItem="3y3-8N-3Yu" firstAttribute="bottom" secondItem="cs4-CT-AAG" secondAttribute="bottom" id="fY4-9r-Z5W"/>
+                            <constraint firstItem="Oe9-4x-8pt" firstAttribute="leading" secondItem="3y3-8N-3Yu" secondAttribute="leading" id="hrC-X5-cdZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3y3-8N-3Yu"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="Oe9-4x-8pt" id="A0n-JL-s90"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="goLeft" modalTransitionStyle="flipHorizontal" id="Y9L-qM-Dhx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cf2-ha-DRO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="APP" width="256" height="256"/>
+        <image name="Background" width="288" height="480"/>
+    </resources>
+</document>
